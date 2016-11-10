@@ -1,23 +1,19 @@
 {
-  "name": "wp2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack -p",
-    "dev": "webpack-dev-server"
+  "name":        "outset-webpack",
+  "description": "Frontend built by webpack, with or without React.",
+
+  "version": "0.0.1",
+  "license": "MIT",
+
+  "repository": "callmecavs/outset-webpack",
+
+  "author": {
+    "name":  "Michael Cavalea",
+    "email": "callmecavs@gmail.com",
+    "url":   "http://callmecavs.com/"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.18.2",
-    "babel-loader": "^6.2.7",
-    "babel-preset-es2015": "^6.18.0",
-    "css-loader": "^0.25.0",
-    "node-sass": "^3.11.2",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^2.1.0-beta.25",
-    "webpack-dev-server": "^2.1.0-beta.10"
+
+  "bin": {
+    "outset-webpack": "outset-webpack.js"
   }
 }
