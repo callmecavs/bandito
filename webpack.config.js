@@ -25,7 +25,9 @@ const config = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['es2015']
+              presets: [
+                'es2015'
+              ]
             }
           }
         ]
@@ -49,7 +51,9 @@ const config = {
   devServer: {
     contentBase: __dirname + '/src',
     port: 3000
-  }
+  },
+
+  target: 'web'
 }
 
 module.exports = config
