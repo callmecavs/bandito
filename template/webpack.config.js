@@ -29,7 +29,7 @@ const config = {
   },
 
   resolve: {
-    extensions: [ '', '.js' ]
+    extensions: ['.js', '.json']
   },
 
   module: {
