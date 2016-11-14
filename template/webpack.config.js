@@ -12,6 +12,12 @@ const config = {
     app: './main.js'
   },
 
+  output: {
+    filename: 'bundle.js',
+    path: __dirname + '/dist',
+    publicPath: '/static'
+  },
+
   resolve: {
     modules: [
       path.resolve(__dirname, 'src'),
@@ -76,12 +82,6 @@ const config = {
       })
     ]
   ],
-
-  output: {
-    filename: 'bundle.js',
-    path: __dirname + '/dist',
-    publicPath: '/static'
-  },
 
   devServer: {
     contentBase: __dirname + '/src',
