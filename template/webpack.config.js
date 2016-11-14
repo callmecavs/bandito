@@ -36,6 +36,9 @@ const config = {
     rules: [
       {
         test: /\.js$/,
+        include: [
+          path.join(__dirname, '/src')
+        ],
         use: [
           {
             loader: 'babel-loader',
