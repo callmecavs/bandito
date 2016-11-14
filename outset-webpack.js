@@ -9,8 +9,10 @@ const arg = process.argv[2] || '.'
 const TEMPLATE = `${ __dirname }/template`
 const TO       = `${ process.cwd() }/${ arg }`
 
-fs.copy(FROM, TO, error => {
-  if(error) return console.log(error)
+fs.copy(TEMPLATE, TO, error => {
+  if(error) {
+    return console.log(error)
+  }
 
-  fs.renameSync(TO + '/gitignore', TO + '/.gitignore')
+  fs.renameSync(`${ TO }/gitignore`, `${ TO }/.gitignore`)
 })
