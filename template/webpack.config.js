@@ -83,7 +83,7 @@ const config = {
     ]
   ],
 
-  devtool: isProd ? false : 'cheap-module-eval-source-map',
+  devtool: !isProd ? 'cheap-module-eval-source-map' : false,
 
   devServer: {
     contentBase: __dirname + '/src',
