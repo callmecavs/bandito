@@ -39,9 +39,6 @@ const config = {
         use: [
           {
             loader: 'babel-loader',
-            include: [
-              path.resolve(__dirname, '/src')
-            ],
             options: {
               presets: [
                 'latest',
