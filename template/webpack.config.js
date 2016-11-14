@@ -3,7 +3,7 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const isProd = process.argv.includes('--prod')
+const isProd = process.argv.includes('-p')
 
 const config = {
   context: __dirname + '/src',
