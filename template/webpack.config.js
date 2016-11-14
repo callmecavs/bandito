@@ -83,6 +83,8 @@ const config = {
     ]
   ],
 
+  devtool: isProd ? false : 'cheap-module-eval-source-map',
+
   devServer: {
     contentBase: __dirname + '/src',
     port: 3000
