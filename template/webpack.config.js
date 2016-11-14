@@ -29,10 +29,7 @@ const config = {
   },
 
   resolve: {
-    modules: [
-      path.resolve(__dirname, 'src'),
-      'node_modules'
-    ]
+    extensions: [ '', '.js' ]
   },
 
   module: {
@@ -43,6 +40,9 @@ const config = {
           {
             loader: 'babel-loader',
             options: {
+              include: [
+                path.resolve(__dirname, '/src'),
+              ],
               presets: [
                 'latest',
                 'stage-0',
@@ -64,11 +64,16 @@ const config = {
           }
         ]
       }, {
-        test: /\.(scss)$/,
+        test: /\.scss$/,
         use: [
           'style-loader',
           'css-loader',
           'sass-loader'
+        ]
+      }, {
+        test: /\.json$/,
+        use: [
+          'json-loader'
         ]
       }
     ]
