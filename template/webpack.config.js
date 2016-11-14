@@ -83,6 +83,8 @@ const config = {
     ]
   ],
 
+  cache: !isProd ? true : false,
+
   devtool: !isProd ? 'cheap-module-eval-source-map' : false,
 
   devServer: {
