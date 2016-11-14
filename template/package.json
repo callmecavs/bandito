@@ -14,8 +14,8 @@
   },
 
   "scripts": {
-    "build": "webpack -p",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "prod": "webpack -p"
   },
 
   "devDependencies": {
