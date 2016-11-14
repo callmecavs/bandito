@@ -3,7 +3,8 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const isProd = process.argv.includes('-p')
+const isDev  = !process.argv.includes('-p')
+const isProd = !isDev
 
 const config = {
   context: __dirname + '/src',
@@ -38,7 +39,7 @@ const config = {
                 'stage-0',
                 'react',
 
-                ...!isProd ? [] : [
+                ...isDev ? [] : [
                   'react-optimize'
                 ]
               ],
@@ -66,14 +67,14 @@ const config = {
 
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': !isProd ? '"development"' : '"production"',
+      'process.env.NODE_ENV': isDev ? '"development"' : '"production"',
       'process.env.BROWSER': true,
-      'DEV': !isProd
+      'DEV': isDev
     }),
 
     new webpack.optimize.OccurrenceOrderPlugin(true),
 
-    ...!isProd ? [] : [
+    ...isDev ? [] : [
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin({
         compress: {
@@ -83,9 +84,9 @@ const config = {
     ]
   ],
 
-  cache: !isProd ? true : false,
+  cache: isDev ? true : false,
 
-  devtool: !isProd ? 'cheap-module-eval-source-map' : false,
+  devtool: isDev ? 'cheap-module-eval-source-map' : false,
 
   devServer: {
     contentBase: __dirname + '/src',
