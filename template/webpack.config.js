@@ -1,7 +1,16 @@
 'use strict'
 
 const path = require('path')
-const webpack = require('webpack')
+
+const {
+  DefinePlugin,
+
+  optimize: {
+    DedupePlugin,
+    OccurrenceOrderPlugin,
+    UglifyJsPlugin
+  }
+} = require('webpack')
 
 const isDev  = !process.argv.includes('-p')
 const isProd = !isDev
@@ -66,17 +75,17 @@ const config = {
   },
 
   plugins: [
-    new webpack.DefinePlugin({
+    new DefinePlugin({
       'process.env.NODE_ENV': isDev ? '"development"' : '"production"',
       'process.env.BROWSER': true,
       'DEV': isDev
     }),
 
-    new webpack.optimize.OccurrenceOrderPlugin(true),
+    new OccurrenceOrderPlugin(true),
 
     ...isDev ? [] : [
-      new webpack.optimize.DedupePlugin(),
-      new webpack.optimize.UglifyJsPlugin({
+      new DedupePlugin(),
+      new UglifyJsPlugin({
         compress: {
           screw_ie8: true
         }
