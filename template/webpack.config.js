@@ -28,7 +28,16 @@ const config = {
             loader: 'babel-loader',
             options: {
               presets: [
-                'es2015'
+                'latest',
+                'stage-0',
+                'react',
+
+                ...!isProd ? [] : [
+                  'react-optimize'
+                ]
+              ],
+              plugins: [
+                'transform-runtime'
               ]
             }
           }
