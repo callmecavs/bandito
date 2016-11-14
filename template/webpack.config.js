@@ -19,7 +19,7 @@ const config = {
   context: __dirname + '/src',
 
   entry: {
-    app: './main.js'
+    main: './index.js'
   },
 
   output: {
