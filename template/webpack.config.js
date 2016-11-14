@@ -37,7 +37,12 @@ const config = {
                 ]
               ],
               plugins: [
-                'transform-runtime'
+                'transform-runtime',
+
+                ...isProd ? [] : [
+                  'transform-react-jsx-source',
+                  'transform-react-jsx-self'
+                ]
               ]
             }
           }
