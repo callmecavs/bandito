@@ -39,10 +39,10 @@ const config = {
         use: [
           {
             loader: 'babel-loader',
+            include: [
+              path.resolve(__dirname, '/src')
+            ],
             options: {
-              include: [
-                path.resolve(__dirname, '/src'),
-              ],
               presets: [
                 'latest',
                 'stage-0',
