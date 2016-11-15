@@ -54,6 +54,7 @@ const config = {
               ],
               plugins: [
                 'transform-runtime',
+                'transform-decorators-legacy',
 
                 ...isProd ? [] : [
                   'transform-react-jsx-source',
