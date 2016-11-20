@@ -91,6 +91,12 @@ const config = {
 
     new OccurrenceOrderPlugin(true),
 
+    new LoaderOptionsPlugin({
+      options: {
+        postcss: [ require('autoprefixer')() ]
+      }
+    }),
+
     ...isDev ? [] : [
       new DedupePlugin(),
       new UglifyJsPlugin({
@@ -98,13 +104,7 @@ const config = {
           screw_ie8: true
         }
       })
-    ],
-
-    new LoaderOptionsPlugin({
-      options: {
-        postcss: [ require('autoprefixer')() ]
-      }
-    })
+    ]
   ],
 
   cache: isDev ? true : false,
