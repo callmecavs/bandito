@@ -13,8 +13,8 @@
   "env": {
     "development": {
       "plugins": [
-        "transform-react-jsx-source",
-        "transform-react-jsx-self"
+        "transform-react-jsx-self",
+        "transform-react-jsx-source"
       ]
     },
 
