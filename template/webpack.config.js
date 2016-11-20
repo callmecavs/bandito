@@ -4,6 +4,7 @@ const path = require('path')
 
 const {
   DefinePlugin,
+  LoaderOptionsPlugin,
 
   optimize: {
     DedupePlugin,
@@ -29,7 +30,7 @@ const config = {
   },
 
   resolve: {
-    extensions: ['.js', '.json']
+    extensions: ['.js', '.json', '.scss']
   },
 
   module: {
@@ -69,6 +70,7 @@ const config = {
         use: [
           'style-loader',
           'css-loader',
+          'postcss-loader',
           'sass-loader'
         ]
       }, {
@@ -96,7 +98,13 @@ const config = {
           screw_ie8: true
         }
       })
-    ]
+    ],
+
+    new LoaderOptionsPlugin({
+      options: {
+        postcss: [ require('autoprefixer')() ]
+      }
+    })
   ],
 
   cache: isDev ? true : false,
