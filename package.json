@@ -1,6 +1,6 @@
 {
   "name":        "outset-webpack",
-  "description": "Frontend built by webpack, with or without React.",
+  "description": "Frontend powered by React, and built by webpack 2.",
 
   "version": "0.0.1",
   "license": "MIT",
