@@ -99,6 +99,23 @@ const config = {
 
     ...isDev ? [] : [
       new DedupePlugin(),
+
+      new HtmlWebpackPlugin({
+        inject: true,
+        minify: {
+          collapseWhitespace: true,
+          minifyJS: true,
+          minifyCSS: true,
+          minifyURLs: true,
+          removeComments: true,
+          removeRedundantAttributes: true,
+          removeEmptyAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          useShortDoctype: true
+        },
+        template: 'index.html'
+      }),
+
       new UglifyJsPlugin({
         compress: {
           screw_ie8: true
