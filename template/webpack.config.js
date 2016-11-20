@@ -1,13 +1,13 @@
 'use strict'
 
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const {
   DefinePlugin,
   LoaderOptionsPlugin,
 
   optimize: {
-    DedupePlugin,
     OccurrenceOrderPlugin,
     UglifyJsPlugin
   }
@@ -98,8 +98,6 @@ const config = {
     }),
 
     ...isDev ? [] : [
-      new DedupePlugin(),
-
       new HtmlWebpackPlugin({
         inject: true,
         minify: {
