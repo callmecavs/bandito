@@ -56,6 +56,25 @@ const config = {
         use: [
           'json-loader'
         ]
+      }, {
+        test: /\.(gif|jpg|png|svg)$/,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack',
+            query: {
+              interlaced: true,
+              progressive: true,
+
+              mozjpeg: {
+                quality: '90'
+              },
+              pngquant: {
+                quality: '90'
+              }
+            }
+          }
+        ]
       }
     ]
   },
