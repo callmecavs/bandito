@@ -30,13 +30,13 @@ const config = {
   },
 
   resolve: {
-    extensions: ['.js', '.json', '.scss']
+    extensions: ['.js', '.jsx', '.json', '.scss']
   },
 
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         include: [
           path.join(__dirname, '/src')
         ],

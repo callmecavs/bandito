@@ -6,4 +6,3 @@ Frontend powered by React, and built by webpack 2.
 
 * [ ] Production images handling
 * [ ] HMR for Sass
-* [ ] Resolve `.jsx`, make sure Babel parses it
