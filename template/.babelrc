@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "latest",
+    "stage-0",
+    "react"
+  ],
+
+  "plugins": [
+    "transform-runtime",
+    "transform-decorators-legacy"
+  ],
+
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source",
+        "transform-react-jsx-self"
+      ]
+    },
+
+    "production": {
+      "presets": [
+        "react-optimize"
+      ]
+    }
+  }
+}

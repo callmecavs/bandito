@@ -41,29 +41,7 @@ const config = {
           path.join(__dirname, '/src')
         ],
         use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: [
-                'latest',
-                'stage-0',
-                'react',
-
-                ...isDev ? [] : [
-                  'react-optimize'
-                ]
-              ],
-              plugins: [
-                'transform-runtime',
-                'transform-decorators-legacy',
-
-                ...isProd ? [] : [
-                  'transform-react-jsx-source',
-                  'transform-react-jsx-self'
-                ]
-              ]
-            }
-          }
+          'babel-loader'
         ]
       }, {
         test: /\.scss$/,
@@ -84,9 +62,8 @@ const config = {
 
   plugins: [
     new DefinePlugin({
-      'process.env.NODE_ENV': isDev ? '"development"' : '"production"',
-      'process.env.BROWSER': true,
-      'DEV': isDev
+      'DEV': isDev,
+      'PROD': isProd
     }),
 
     new OccurrenceOrderPlugin(true),

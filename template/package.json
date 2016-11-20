@@ -14,8 +14,8 @@
   },
 
   "scripts": {
-    "dev": "webpack-dev-server",
-    "prod": "webpack -p"
+    "dev": "NODE_ENV=development webpack-dev-server",
+    "prod": "NODE_ENV=production webpack -p"
   },
 
   "dependencies": {
