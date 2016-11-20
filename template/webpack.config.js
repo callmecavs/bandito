@@ -59,9 +59,13 @@ const config = {
       }, {
         test: /\.(gif|jpg|png|svg)$/,
         use: [
-          'file-loader',
           {
-            loader: 'image-webpack',
+            loader: 'url-loader',
+            query: {
+              limit: 10000
+            }
+          }, {
+            loader: 'image-webpack-loader',
             query: {
               interlaced: true,
               progressive: true,
@@ -69,6 +73,7 @@ const config = {
               mozjpeg: {
                 quality: '90'
               },
+
               pngquant: {
                 quality: '90'
               }
