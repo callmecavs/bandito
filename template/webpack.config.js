@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {
   DefinePlugin,
   LoaderOptionsPlugin,
+  NamedModulesPlugin,
 
   optimize: {
     OccurrenceOrderPlugin,
@@ -90,13 +91,15 @@ const config = {
       'PROD': isProd
     }),
 
-    new OccurrenceOrderPlugin(true),
-
     new LoaderOptionsPlugin({
       options: {
         postcss: [ require('autoprefixer')() ]
       }
     }),
+
+    new NamedModulesPlugin(),
+
+    new OccurrenceOrderPlugin(true),
 
     ...isDev ? [] : [
       new HtmlWebpackPlugin({
