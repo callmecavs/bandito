@@ -99,7 +99,7 @@ const config = {
 
     ...isDev ? [] : [
       new HtmlWebpackPlugin({
-        inject: true,
+        inject: false,
         minify: {
           collapseWhitespace: true,
           minifyJS: true,
