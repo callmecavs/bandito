@@ -133,7 +133,10 @@ const config = {
 
   devServer: {
     contentBase: __dirname + '/src',
-    port: 3000
+    port: 3000,
+    historyApiFallback: {
+      index: 'index.html'
+    }
   },
 
   target: 'web'
