@@ -76,7 +76,8 @@ const config = {
               },
 
               pngquant: {
-                quality: '90'
+                quality: '90',
+                speed: '4'
               }
             }
           }
