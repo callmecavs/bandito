@@ -94,7 +94,13 @@ const config = {
 
     new LoaderOptionsPlugin({
       options: {
-        postcss: [ require('autoprefixer')() ]
+        postcss: [
+          require('rucksack-css')({
+            inputPseudo: false,
+            quantityQueries: false
+          }),
+          require('autoprefixer')()
+        ]
       }
     }),
 
