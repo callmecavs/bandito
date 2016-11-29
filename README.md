@@ -50,6 +50,7 @@ $ npm run deploy
 - [ ] Component scaffolding via CLI
 - [ ] Element components
   - [ ] Image
+    - [ ] `src` to `require`
     - [ ] integrate with scroll to lazy load
 - [ ] Decorators
   - [ ] `prevDef`
