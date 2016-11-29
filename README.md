@@ -6,7 +6,7 @@ Frontend powered by React, and built by webpack 2.
 
 In your terminal:
 
-```
+```bash
 # using node and npm
 # install outset-webpack globally
 
@@ -22,7 +22,7 @@ $ npm run dev
 
 In your browser:
 
-```
+```bash
 http://localhost:3000/
 ```
 
@@ -30,7 +30,7 @@ http://localhost:3000/
 
 The template includes a simple node server for easy deployment to Heroku.
 
-```
+```bash
 # using heroku-toolbelt
 # add the Heroku remote
 
