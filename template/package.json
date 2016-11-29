@@ -15,7 +15,8 @@
 
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --hot --inline",
-    "prod": "NODE_ENV=production webpack -p"
+    "prod": "NODE_ENV=production webpack -p",
+    "heroku-postbuild": "npm run prod"
   },
 
   "dependencies": {
