@@ -6,15 +6,13 @@ Frontend powered by React, and built by webpack 2.
 
 In your terminal:
 
-```bash
+```shell
 # using node and npm
 # install outset-webpack globally
-
 $ npm install outset-webpack -g
 
 # use the outset-webpack command from the CLI to scaffold a project
 # template files are copied to the CWD, unless a path is specified
-
 $ outset-webpack [path]
 $ npm i
 $ npm run dev
@@ -22,7 +20,7 @@ $ npm run dev
 
 In your browser:
 
-```bash
+```shell
 http://localhost:3000/
 ```
 
@@ -30,18 +28,15 @@ http://localhost:3000/
 
 The template includes a simple node server for easy deployment to Heroku.
 
-```bash
+```shell
 # using heroku-toolbelt
 # add the Heroku remote
-
 $ heroku git:remote -a heroku-app-name
 
 # ensure Heroku installs devDependencies
-
 $ heroku config:set NPM_CONFIG_PRODUCTION=false
 
 # run the deploy script
-
 $ npm run deploy
 ```
 
