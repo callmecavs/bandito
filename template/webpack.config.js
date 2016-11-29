@@ -63,7 +63,7 @@ const config = {
           {
             loader: 'url-loader',
             query: {
-              limit: 10000
+              limit: 8 * 1024
             }
           }, {
             loader: 'image-webpack-loader',
