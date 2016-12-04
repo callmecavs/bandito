@@ -47,6 +47,7 @@ $ npm run deploy
 
 ## Future
 
+- [ ] Add Optimize JS [https://github.com/vigneshshanmugam/optimize-js-plugin](https://github.com/vigneshshanmugam/optimize-js-plugin)
 - [ ] Component scaffolding via CLI
 - [ ] Element components
   - [ ] Image
