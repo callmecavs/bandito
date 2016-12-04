@@ -1,7 +1,9 @@
 'use strict'
 
 const path = require('path')
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const OptimizeJsPlugin = require('optimize-js-plugin')
 
 const {
   DefinePlugin,
@@ -130,6 +132,10 @@ const config = {
         compress: {
           screw_ie8: true
         }
+      }),
+
+      new OptimizeJsPlugin({
+        sourceMap: false
       })
     ]
   ],

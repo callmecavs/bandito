@@ -46,6 +46,7 @@
     "image-webpack-loader": "^3.0.0",
     "json-loader": "^0.5.4",
     "node-sass": "^3.12.1",
+    "optimize-js-plugin": "0.0.4",
     "postcss-loader": "^1.1.1",
     "rucksack-css": "^0.9.1",
     "sass-loader": "^4.0.2",
