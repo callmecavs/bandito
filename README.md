@@ -66,3 +66,7 @@ $ npm run deploy
   - [ ] `stopProp`
 - [ ] Resize
 - [ ] Scroll
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT). © 2016 Michael Cavalea
