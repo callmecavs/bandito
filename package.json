@@ -1,11 +1,11 @@
 {
-  "name":        "outset-webpack",
-  "description": "Frontend powered by React, and built by webpack 2.",
+  "name":        "bandito",
+  "description": "Minimal boilerplate for mostly-static React frontends, built by webpack 2.",
 
   "version": "0.0.1",
   "license": "MIT",
 
-  "repository": "callmecavs/outset-webpack",
+  "repository": "callmecavs/bandito",
 
   "author": {
     "name":  "Michael Cavalea",
@@ -14,7 +14,7 @@
   },
 
   "bin": {
-    "outset-webpack": "outset-webpack.js"
+    "bandito": "bandito.js"
   },
 
   "preferGlobal": true,

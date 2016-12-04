@@ -1,6 +1,10 @@
-# outset-webpack
+# bandito
 
-Frontend powered by React, and built by webpack 2.
+Minimal boilerplate for mostly-static React frontends, built by webpack 2.
+
+## About
+
+**TL;DR:** Existing React/webpack boilerplates scaffold applications with complex state. Bandito scaffolds a minimal boilerplate for mostly static websites with simple state.
 
 ## Getting Started
 
@@ -8,14 +12,14 @@ In your terminal:
 
 ```shell
 # using node and npm
-# install outset-webpack globally
+# install bandito globally
 
-$ npm install outset-webpack -g
+$ npm install bandito -g
 
-# use the outset-webpack command from the CLI to scaffold a project
+# use the bandito command from the CLI to scaffold a project
 # template files are copied to the CWD, unless a path is specified
 
-$ outset-webpack [path]
+$ bandito [path]
 $ npm i
 $ npm run dev
 ```
