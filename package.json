@@ -1,6 +1,6 @@
 {
   "name":        "bandito",
-  "description": "Minimal boilerplate for mostly-static React frontends, built by webpack 2.",
+  "description": "Boilerplate for mostly-static React frontends, built by webpack 2.",
 
   "version": "0.0.1",
   "license": "MIT",

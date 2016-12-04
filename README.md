@@ -1,10 +1,10 @@
 # bandito
 
-Minimal boilerplate for mostly-static React frontends, built by webpack 2.
+Boilerplate for mostly-static React frontends, built by webpack 2.
 
 ## About
 
-**TL;DR:** Existing React/webpack boilerplates scaffold applications with complex state. Bandito scaffolds a minimal boilerplate for mostly static websites with simple state.
+**TL;DR:** Existing React/webpack boilerplates scaffold applications with complex state. Bandito scaffolds a minimal, mostly-static frontend with emphasis on modularity.
 
 ## Getting Started
 
@@ -51,6 +51,7 @@ $ npm run deploy
 
 ## Future
 
+- [ ] Service worker generation
 - [ ] Component scaffolding via CLI
 - [ ] Element components
   - [ ] Image
