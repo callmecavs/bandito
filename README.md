@@ -1,10 +1,14 @@
 # bandito
 
-Boilerplate for mostly-static React frontends, built by webpack 2.
+[![bandito on NPM](https://img.shields.io/npm/v/bandito.svg?style=flat-square)](https://www.npmjs.com/package/bandito)
+
+Boilerplate for mostly-static React frontends.
 
 ## About
 
 **TL;DR:** Existing React/webpack boilerplates scaffold applications with complex state. Bandito scaffolds a minimal, mostly-static frontend with emphasis on modularity.
+
+More details about the build config and workflow coming soon.
 
 ## Getting Started
 
