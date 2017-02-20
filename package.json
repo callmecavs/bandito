@@ -2,7 +2,7 @@
   "name":        "bandito",
   "description": "Boilerplate for mostly-static React frontends.",
 
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
 
   "repository": "callmecavs/bandito",
